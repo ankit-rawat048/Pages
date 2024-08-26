@@ -1,0 +1,137 @@
+*{
+    margin: 2px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url("3_e3922ced-5662-4b73-acad-4750b186ae15.webp");
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Adjust the transparency here */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+
+
+nav{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 70px;
+    background-color: rgb(5, 35, 5);
+}
+
+.logo{
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #fff;
+    font-size: 30px;
+}
+
+@media (max-width:600px) {
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #b58267;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 20px;
+        padding-top: 0;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menuList{
+        transition: all 0.5s;
+    }
+}
+
+/* main content strts here */
+
+main{
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 20px;
+}
+
+.para1 {
+    /* border: 1px solid black; */
+    width:100%;
+    padding: 20px;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    & p{
+        font-size: 40px;font-family: cursive;
+        color: rgb(104, 92, 49);
+    }
+    & button{
+        padding:20px;
+        width: 80px;
+        height: 80px;
+        background-color: #ae5322;
+        border-radius: 50%;
+        & a i{
+            font-size: 40px;
+            color: #fff;
+        }
+    }
+}
+
+.image1 {
+    width: 100%;
+    height: 100%; /* Make the container take full height */
+    max-width: 100%; /* Ensures the container doesn't exceed the section's width */
+    margin: 0; /* Remove margins to fit the section perfectly */
+    padding: 0; /* Remove padding for a snug fit */
+    background-color: #f8f8f8; /* Optional: background color */
+    overflow: hidden; /* Hide any overflow from the image */
+}
+
+.image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border-radius: 0; /* Remove border radius for full coverage */
+}

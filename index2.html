@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="vecteezy_coffee-shop-logo_23617247.png">
+    </head>
+    <body>
+        <nav>
+            <div class="logo">
+                <img src="vecteezy_coffee-shop-logo_23617247.png" alt="logo" height="70px">
+            </div>
+            <ul id="menuList">
+                <li><a href="">Home</a></li>
+                <li><a href="">Coffee & meal</a></li>
+                <li><a href="">Locations</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    
+        <main>
+            <div class="para1">
+                <p>"Fuel Your Day, One Sip at a Time."</p>
+                <button>
+                    <a href="#coffee & meal">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </button>
+            </div>
+        </main>
+    
+        <script>
+            let menuList = document.getElementById("menuList")
+            menuList.style.maxHeight = "0px";
+    
+            function toggleMenu(){
+                if(menuList.style.maxHeight == "0px")
+                {
+                    menuList.style.maxHeight = "300px";
+                }
+                else{
+                    menuList.style.maxHeight = "0px";
+                }
+            }
+            
+        </script>
+        <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+
+
